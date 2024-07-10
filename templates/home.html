@@ -1,0 +1,22 @@
+{% extends 'navigation.html' %}
+{% block body%}
+{%load static%}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+
+<body style="background-image:url('{%static '123.jpg'%}') ; background-repeat:no-repeat;" >
+{% csrf_token %}
+<div class="content" >
+    <h1>JNPA's <br><span>Complaint Management</span></h1>
+    <div class="par">The Jawaharlal Nehru Port Authority (JNPA) at Navi Mumbai is a premier container handling Port in India
+         accounting for around 50% <br>of the total containerised cargo volume, across the major ports of India. Commissioned
+          on 26th May 1989, in less than three decades of its operations,<br> JNPA has transformed from a bulk cargo terminal
+           to the premier container port in the country. Ranked 26th among the top 100 Container Ports in the world,<br>
+            JNPA is connected to over 200 ports in the world.</p>
+
+        <div class="img">
+            <!-- <img src="{% static 'work.png' %}" alt="cmsimg" width="400px" height="300px"> -->
+        </div>
+    </div>
+    
+</div>
+</body>{%endblock body%}
